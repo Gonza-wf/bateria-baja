@@ -1,4 +1,4 @@
-const CACHE_NAME = "bateria-baja-v1";
+const CACHE_NAME = "bateria-baja-v2";
 const ASSETS = [
   "./",
   "./index.html",
@@ -30,3 +30,4 @@ self.addEventListener("fetch", event => {
     caches.match(event.request).then(res => res || fetch(event.request))
   );
 });
+
